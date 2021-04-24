@@ -1,0 +1,11 @@
+<button class="btn btn-primary" (click)="logout()">Logout</button>
+<button class="btn btn-primary" (click)="loadMovies()">Refresh</button>
+
+<div class="card" style="width: 18rem;" *ngFor="let listItem of list">
+  <!-- <img src="..." class="card-img-top" alt="..."> -->
+  <div class="card-body">
+    <h5 class="card-title">{{listItem.title}}</h5>
+    <p class="card-text">{{listItem.body}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
